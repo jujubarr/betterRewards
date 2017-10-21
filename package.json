@@ -1,0 +1,22 @@
+{
+  "name": "betterrewards",
+  "version": "1.0.0",
+  "description": "The better credit card rewards tracking app!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujubarr/betterRewards.git"
+  },
+  "keywords": [
+    "rewards"
+  ],
+  "author": "Rosemary Chen, Lucy Tan, Lorman Lau, Imron Hajiahmad, Ethan Tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujubarr/betterRewards/issues"
+  },
+  "homepage": "https://github.com/jujubarr/betterRewards#readme"
+}
