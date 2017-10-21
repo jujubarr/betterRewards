@@ -30,5 +30,31 @@ module.exports = {
 				res.status(500)
 			}
 		})
+		.catch(errors =>
+			res.json()
+		)
+	},
+	create: function(req, res) {
+		var user = new User(req.body);
+		user.save()
+		.then(() => {
+			console.log("successfully created a user");
+			res.json(true);
+		})
+		.catch(errors => { 
+			console.log(errors)
+		});
+	},
+	delete: function(req, res){
+		User.remove({_id: req.params.id}, function(errors, results){
+			if(errors) {
+				console.log(errors);
+				res.status(500).json(errors);
+			} else {
+				console.log('Deleted');
+				res.json(true);
+			}
+		})
 	}
+
 }
