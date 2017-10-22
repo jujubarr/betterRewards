@@ -1,0 +1,36 @@
+<div class="space">
+    <h4>All Cards</h4>
+
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Company</th>
+            <th>Card Number</th>
+            <th>Rewards</th>
+        </tr>
+        <!-- <tr class="card" *ngFor='let card of cards'> -->
+        <tr>
+            <td><i (click)="onClick()" class="material-icons red-icon btn-flat">remove_circle_outline</i></td>
+            <td><i class="material-icons medium">credit_card</i></td>
+            <td>Chase (API)</td>
+            <td>**** **** **** 9876 (API)</td>
+            <td>1% (API)</td>
+        </tr>
+        <tr>
+            <td><a class="material-icons blue-icon btn-flat modal-trigger" href="#addCard">add_circle_outline</a></td>
+            <!-- Modal Structure -->
+            <div id="addCard" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                </div>
+            </div>
+
+        </tr>
+    </table>
+
+</div>
